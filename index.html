@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="info-container">
+        <h1>ꕤ Kanban-Board</h1>
+        <p>
+          A place to organise tasks to completion as well as add new ones and
+          delete old ones.
+        </p>
+      </div>
+      <form class="input-container">
+        <div class="field">
+          <input id="title" placeholder="title..." />
+          <input id="description" placeholder="description..." />
+        </div>
+        <input type="submit" id="submit-button" />
+      </form>
+    </header>
+    <div class="error-container"></div>
+    <section class="column-container">
+      <div class="task-column" id="backlog">
+        <h3>✔ Backlog</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+      <div class="task-column" id="doing">
+        <h3>✔ Doing</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+      <div class="task-column" id="done">
+        <h3>✔ Done</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+      <div class="task-column" id="discard">
+        <h3>✔ Won't Do</h3>
+        <hr class="custom-hr" />
+        <div class="task-list"></div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
